@@ -1,0 +1,15 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #00FFFF;
+    text-align: justify;
+}
+h1 {
+    color: #00008B;
+    text-align: left;
+    font-size: 60px;
+    font-family: Comic Sans MS;
+}
+h4 {
+    text-align: right;
+    font-style: italic;
+}
