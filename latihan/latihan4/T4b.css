@@ -1,0 +1,93 @@
+.container {
+    width: 845px;
+    height: auto;
+    border: 2px solid rgb(255, 255, 255);
+    margin: auto    ;
+    background-color: rgb(255, 255, 255);
+}
+body {
+    background-color: rgb(0, 0, 0);
+    font-family:"Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: black;
+    background-image: url(img/webb-dark.png);
+}
+.header {
+    padding: 20px;
+    padding-bottom: 5px;
+}
+.header .judul {
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat", sans-serif;
+}
+.header ul li {
+    display: inline-block;
+    margin-top: 0px;
+    margin-right: 91px; 
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+.header a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.746);
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+.header a:hover {
+    color: royalblue;
+}
+.hero {
+    height: 350px;
+    background-image: url("img/hero-germany-lake.jpg");
+    background-size: cover;
+    background-position: center
+}
+.content {
+    padding: 20px;
+}
+.content h2 {
+    font-size: 28px;
+    font-weight: bold;;
+    font-family: "Montserrat", sans-serif;
+}
+.content .penulis {
+    font-size: 11px;
+    margin-top: -5px;
+}
+.content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+.content .penulis a {
+    color: Royalblue;
+    text-decoration: none;
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    font-size: 12px;
+    color: white;
+    font:"Montserrat", sans-serif;
+}
+figure {
+    margin: 20px auto;
+    text-align: center;
+}
+figure img {
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+}
+figcaption {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 75);
+    margin-top: 8px;
+    font-style: italic;
+}

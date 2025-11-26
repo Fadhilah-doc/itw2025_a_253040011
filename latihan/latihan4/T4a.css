@@ -1,17 +1,21 @@
 body {
     font: 16px/28px arial, sans-serif;
     background-color: #eaeaea;
+    background-image: url(leaves.png);
     color: #333333;
+    background-position: center;
 }
 
 .container {
     width: 800px;
     margin: auto;
     background-color: #fff;
+    list-style: justify;
 } 
 
 .hearder {
     padding: 20px;
+    padding-bottom: 10px;
 }
 
 .header .judul {
@@ -19,7 +23,7 @@ body {
     font-weight: bold;
 }
 
-header ul li {
+.header ul li {
     display: inline-block;
     margin-top: 20px;
     margin-right: 10px;
@@ -39,4 +43,43 @@ header ul li {
 .hero {
     height: 250px;
     background-image: url(hero.avif);
+    background-size: cover;
+    background-position: 0;
+    border-top: 5px solid lightskyblue;
+    border-bottom: 5px solid salmon;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.content .penulis {
+    font-size: 11px;
+    margin-top: -5px;
+}
+
+.content .penulis a {
+    color: salmon;
+    text-decoration: none;
+}
+
+.content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.footer {
+    background-color: #333;
+    padding: 20;
+}
+
+.footer .copy {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
 }
