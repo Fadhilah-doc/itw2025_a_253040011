@@ -1,12 +1,5 @@
-/* Font */
-@font-face {
-    font-family: 'Bebas Neue';
-    src: url(../Assets/font/BebasNeueBold-w1w42.woff) format('woff');
-}
-
-/* Style Utama */
 body {
-    font: 18px/36px 'Bebas Neue', sans-serif;
+    font-family: "Bungee Shade", sans-serif;
     background-image: url(../Assets/img/Full/bgvalorant.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,8 +12,8 @@ h1 {
     font-size: 80px;
     margin: 50px 0;
     text-align: center;
-    text-shadow: 0px 8px 15px rgb(1, 6, 14);
-    color: rgb(201, 206, 211);
+    text-shadow: 0px 8px 15px rgb(10, 12, 14);
+    color: rgb(119, 54, 54);
 }
 
 .container {
@@ -57,7 +50,7 @@ h1 {
     top: 0;
     text-align: center;
     line-height: 120px;
-    color: black;
+    color: rgb(255, 251, 251);
     text-shadow: 1px 1px 2px gray;
     opacity: 0;
 }
@@ -70,7 +63,7 @@ h1 {
     clear: both;
 }
 
-/* Overlay */
+
 .overlay {
     width: 0;
     height: 0;
@@ -131,7 +124,7 @@ h1 {
     animation: slideRightFade 1s 1s forward;
 }
 
-/navigation/
+
 .next, .prev {
     background-image: url(../Assets/img/button/right.png);
     width: 100px;
@@ -146,7 +139,7 @@ h1 {
     left: 10px;
     right: auto;
 }
-/* Animation */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -176,7 +169,7 @@ h1 {
         transform: translateY(0);
     }
 }
-/* Responsive */
+
 @media (max-width: 768px) {
     .container {
         width: 90%;
@@ -205,4 +198,3 @@ h1 {
         line-height: 80px;
     }
 }
-/* End of CSS File */
