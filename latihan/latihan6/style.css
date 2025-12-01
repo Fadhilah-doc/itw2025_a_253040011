@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Courgette", cursive;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    background-color: lightblue;
+    justify-content: space-between;
+    height: 50px;
+    width: 95%;
+    margin: auto;
+    top: 0;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 5px; 
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+nav ul li a:hover {
+    color: white;
+    transition: 0.3s;
+    background: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: black;
+    margin: 4px 0;
+    border-radius: 5px;
+    display: block;
+    transition: .5s;
+    
+    cursor: pointer;
+}
+
+.menu-toggle input {
+    position: absolute;
+    z-index: 10;
+    height: 55px;
+    width: 30px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    top: -9px;
+
+}
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(2px, -2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+}
+
+
+
+/* Responsive */
+
+/* Ukuran Tablet */
+@media screen and (max-width: 768px) {
+    nav{
+        width: 50%;
+    }
+}
+
+/* Ukuran Handphone */
+@media screen and (max-width: 576px) {
+    nav{
+        width: 95%;
+    }
+    nav ul{
+        display: flex;
+        position: absolute;
+        justify-content: space-evenly;
+        flex-direction: column;
+        top: 0;
+        background-color: lightblue;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        opacity: 1;
+        transition: all 0.5s ease-in;
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .menu-toggle {
+        display: flex;
+    }
+}
